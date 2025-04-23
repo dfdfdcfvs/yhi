@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบสำรวจความเสียหายขั้นต้นของโครงสร้างอาคาร หลังจากเหตุการณ์แผ่นดินไหว</title>
+    <style>
+        body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    border: 1px solid #ddd;
+}
+
+h1 {
+    text-align: center;
+    color: #5c6bc0;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="file"],
+select,
+textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: 0.3s ease;
+    margin-bottom: 4px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #90caf9;
+    outline: none;
+    background-color: #fff;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    background-color: #64b5f6;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #42a5f5;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>แบบสำรวจความเสียหายขั้นต้นของโครงสร้างอาคาร หลังจากเหตุการณ์แผ่นดินไหว</h1>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSeHtJWwJvbDzcD1T3mAlqkn6USJWuZzYLKnMgEKE7jC3tIv-w/formResponse" method="post" id="surveyForm">
+
+<div style="text-align: center;">
+  <img src="ปก.png" alt="รูปจากเครื่อง" width="1000">
+</div>
+
+<!-- ที่อยู่อีเมล -->
+<label for="email">ที่อยู่อีเมล</label>
+<input type="email" id="email" name="entry.1234567890" required>
+
+<!-- วันที่สำรวจ -->
+<label for="survey_date">วันที่สำรวจ</label>
+<input type="date" id="survey_date" name="entry.1955342692" required>
+
+<!-- เวลาเริ่มต้นสำรวจ -->
+<label for="survey_time">เวลาเริ่มต้นสำรวจ</label>
+<input type="time" id="survey_time" name="entry.1442653207" required>
+
+<!-- ส่วนที่ 1 ข้อมูลทั่วไปของอาคาร -->
+<h3>ส่วนที่ 1 ข้อมูลทั่วไปของอาคาร</h3>
+<label for="building_name">ชื่ออาคาร</label>
+<input type="text" id="building_name" name="entry.892403623" required>
+
+<label for="owner">เจ้าของ</label>
+<input type="text" id="owner" name="entry.1978401763" required>
+
+<label>เจ้าของกรรมสิทธิ์</label>
+<div class="compact-radio">
+  <label>
+    <input type="radio" name="entry.1403421831" value="อาคารของเอกชน" required>
+    อาคารของเอกชน
+  </label>
+  <br>
+  <label>
+    <input type="radio" name="entry.1403421831" value="อาคารของภาครัฐ" required>
+    อาคารของภาครัฐ
+  </label>
+</div>
+
+
+<label>ขนาดและประเภท</label>
+<div class="compact-radio">
+  <label>
+    <input type="radio" name="entry.845755547" value="อาคารสูง" required>
+    อาคารสูง
+  </label>
+  <br>
+  <label>
+    <input type="radio" name="entry.845755547" value="อาคารขนาดใหญ่พิเศษ" required>
+    อาคารขนาดใหญ่พิเศษ
+  </label>
+  <br>
+  <label>
+    <input type="radio" name="entry.845755547" value="อาคารชุมนุมคน" required>
+    อาคารชุมนุมคน
+  </label>
+</div>
+
+
+<label>กฎหมายควบคุมอาคาร</label>
+<div class="compact-radio">
+  <label>
+    <input type="radio" name="entry.1164822396" value="อาคารควบคุม" required>
+    อาคารควบคุม
+  </label>
+  <br>
+  <label>
+    <input type="radio" name="entry.1164822396" value="อาคารทั่วไป" required>
+    อาคารทั่วไป
+  </label>
+</div>
+
+
+<style>
+  .compact-checkbox label {
+    display: flex;
+    align-items: center;
+    margin: 2px 0;  /* ลดระยะห่างแนวตั้ง */
+    font-size: 14px;
+  }
+  .compact-checkbox input[type="checkbox"] {
+    margin-right: 6px; /* ระยะห่าง checkbox กับข้อความ */
+  }
+</style>
+<label for="001_type">การใช้สอยอาคาร (เลือกได้มากกว่า 1 ข้อ)</label>
+<div class="compact-checkbox" id="001_type">
+  <label><input type="checkbox" name="entry.1053892010" value="บ้านพักอาศัย"> บ้านพักอาศัย</label>
+  <label><input type="checkbox" name="entry.1053892010" value="อาคารสำนักงาน"> อาคารสำนักงาน</label>
+  <label><input type="checkbox" name="entry.1053892010" value="อาคารอยู่อาศัยรวม"> อาคารอยู่อาศัยรวม</label>
+  <label><input type="checkbox" name="entry.1053892010" value="โบราณสถาน"> โบราณสถาน</label>
+  <label><input type="checkbox" name="entry.1053892010" value="หอประชุม"> หอประชุม</label>
+  <label><input type="checkbox" name="entry.1053892010" value="โรงงานอุตสาหกรรม"> โรงงานอุตสาหกรรม</label>
+  <label><input type="checkbox" name="entry.1053892010" value="อาคารพานิชยกรรม"> อาคารพานิชยกรรม</label>
+  <label><input type="checkbox" name="entry.1053892010" value="สถานศึกษา"> สถานศึกษา</label>
+  <label><input type="checkbox" name="entry.1053892010" value="โรงมหรสพ"> โรงมหรสพ</label>
+  <label><input type="checkbox" name="entry.1053892010" value="สถานพยาบาล"> สถานพยาบาล</label>
+  <label><input type="checkbox" name="entry.1053892010" value="โรงแรม"> โรงแรม</label>
+  <label><input type="checkbox" name="entry.1053892010" value="ศาสนสถาน"> ศาสนสถาน</label>
+  <label><input type="checkbox" name="entry.1053892010" value="อื่นๆ" id="otherCheckbox1"> อื่นๆ</label>
+</div>
+<div id="otherInputGroup1" style="display: none;"> 
+  <label for="other_building_usage1">การใช้สอยอาคาร อื่นๆ</label>
+  <input type="text" id="other_building_usage1" name="entry.1069794510">
+</div>
+<script>
+  const otherCheckbox1 = document.getElementById('otherCheckbox1');
+  const otherInputGroup1 = document.getElementById('otherInputGroup1');
+  otherCheckbox1.addEventListener('change', function () {
+    otherInputGroup1.style.display = this.checked ? 'block' : 'none';
+  });
+</script>
+
+<h3>ที่ตั้งอาคาร</h3>
+<label for="address-no">เลขที่</label>
+<input type="text" id="address-no" name="entry.303185528" required placeholder="เช่น 123/4">
+<label for="moo">หมู่ที่</label>
+<input type="text" id="moo" name="entry.1018591110" required placeholder="เช่น หมู่ 5">
+<label for="soi">ซอย</label>
+<input type="text" id="soi" name="entry.1707522573" placeholder="เช่น ซอยสุขใจ">
+<label for="road">ถนน</label>
+<input type="text" id="road" name="entry.706007952" placeholder="เช่น ถนนประชา">
+<label for="subdistrict">ตำบล</label>
+<input type="text" id="subdistrict" name="entry.258522535" required placeholder="เช่น ตำบลในเมือง">
+<label for="district">อำเภอ</label>
+<input type="text" id="district" name="entry.574497661" required placeholder="เช่น อำเภอเมือง">
+<label for="province">จังหวัด</label>
+<input type="text" id="province" name="entry.1793693180" required placeholder="เช่น นครราชสีมา">
+<label for="postcode">รหัสไปรษณีย์</label>
+<input type="text" id="postcode" name="entry.398277724" required placeholder="เช่น 30000">
+<label for="lat">ละติจูด (Latitude)</label>
+<input type="text" id="lat" name="entry.2026602850" placeholder="เช่น 14.9791">
+<label for="lng">ลองจิจูด (Longitude)</label>
+<input type="text" id="lng" name="entry.1426828966" placeholder="เช่น 102.0978">
+
+
+<!-- ส่วนที่ 2 ข้อมูลทางกายภาพของอาคาร -->
+<h3>ส่วนที่ 2 ข้อมูลทางกายภาพของอาคาร</h3>
+<label for="floors_above_ground">จำนวนชั้น เหนือพื้นดิน</label>
+<input type="text" id="floors_above_ground" name="entry.89303826" required>
+<label for="floors_below_ground">จำนวนชั้น ชั้นใต้ดิน</label>
+<input type="text" id="floors_below_ground" name="entry.2103485716" required>
+<label for="building_area">พื้นที่อาคาร (ประมาณ) ตร.ม.</label>
+<input type="text" id="building_area" name="entry.488624598" required>
+
+<style>
+  .compact-checkbox label {
+    display: flex;
+    align-items: center;
+    margin: 2px 0;
+    font-size: 14px;
+  }
+  .compact-checkbox input[type="checkbox"] {
+    margin-right: 6px;
+  }
+</style>
+<label for="surrounding_condition">สภาพโดยรอบอาคาร (เลือกได้มากกว่า 1 ข้อ)</label>
+<div class="compact-checkbox" id="surrounding_condition">
+  <label><input type="checkbox" name="entry.217589440" value="มีอาคารข้างเคียง"> มีอาคารข้างเคียง</label>
+  <label><input type="checkbox" name="entry.217589440" value="ติดเนินดิน/เชิงเขา"> ติดเนินดิน/เชิงเขา</label>
+  <label><input type="checkbox" name="entry.217589440" value="ติดแม่น้ำ คลอง"> ติดแม่น้ำ คลอง</label>
+</div>
+
+
+<style>
+  .compact-checkbox label {
+    display: flex;
+    align-items: center;
+    margin: 2px 0;
+    font-size: 14px;
+  }
+  .compact-checkbox input[type="checkbox"] {
+    margin-right: 6px;
+  }
+</style>
+<label for="structure_type">ชนิดโครงสร้างอาคาร (เลือกได้มากกว่า 1 ข้อ)</label>
+<div class="compact-checkbox" id="structure_type">
+  <label><input type="checkbox" name="entry.1641898739" value="โครงสร้างไม้"> โครงสร้างไม้</label>
+  <label><input type="checkbox" name="entry.1641898739" value="โครงสร้างคอนกรีตเสริมเหล็ก"> โครงสร้างคอนกรีตเสริมเหล็ก</label>
+  <label><input type="checkbox" name="entry.1641898739" value="โครงสร้างอิฐก่อ"> โครงสร้างอิฐก่อ</label>
+  <label><input type="checkbox" name="entry.1641898739" value="โครงสร้างเหล็กรูปพรรณ"> โครงสร้างเหล็กรูปพรรณ</label>
+  <label><input type="checkbox" name="entry.1641898739" value="โครงสร้างครึ่ง คสล.- ครึ่งไม้"> โครงสร้างครึ่ง คสล.- ครึ่งไม้</label>
+  <label><input type="checkbox" name="entry.1641898739" value="โครงสร้างใต้ถุนโล่ง"> โครงสร้างใต้ถุนโล่ง</label>
+  <!-- เพิ่ม id="otherCheckbox" ที่ checkbox "อื่นๆ" -->
+  <label><input type="checkbox" name="entry.1641898739" value="อื่นๆ" id="otherCheckbox2"> อื่นๆ</label>
+</div>
+<!-- ส่วนกรอกข้อมูลสำหรับ "อื่นๆ" -->
+<div id="otherInputGroup2" style="display: none;"> 
+  <label for="other_building_usage2">ชนิดโครงสร้างอาคาร อื่นๆ</label>
+  <input type="text" id="other_building_usage2" name="entry.708721692">
+</div>
+<script>
+  const otherCheckbox2 = document.getElementById('otherCheckbox2');
+  const otherInputGroup2 = document.getElementById('otherInputGroup2');
+  otherCheckbox2.addEventListener('change', function () {
+    otherInputGroup2.style.display = this.checked ? 'block' : 'none';
+  });
+</script>
+
+
+<style>
+  .compact-checkbox label {
+    display: flex;
+    align-items: center;
+    margin: 2px 0;
+    font-size: 14px;
+  }
+  .compact-checkbox input[type="checkbox"] {
+    margin-right: 6px;
+  }
+</style>
+<label for="wall_material">วัสดุผนังภายนอกของอาคาร (เลือกได้มากกว่า 1 ข้อ)</label>
+<div class="compact-checkbox" id="wall_material">
+  <label><input type="checkbox" name="entry.2107839101" value="ผนังอิฐก่อ"> ผนังอิฐก่อ</label>
+  <label><input type="checkbox" name="entry.2107839101" value="ผนังเบา"> ผนังเบา</label>
+  <label><input type="checkbox" name="entry.2107839101" value="ผนังแผ่นคอนกรีต"> ผนังแผ่นคอนกรีต</label>
+  <label><input type="checkbox" name="entry.2107839101" value="ผนังกระจก"> ผนังกระจก</label>
+  <label><input type="checkbox" name="entry.2107839101" value="ผนังไม้"> ผนังไม้</label>
+  <label><input type="checkbox" name="entry.2107839101" value="อื่นๆ" id="otherCheckbox3"> อื่นๆ</label>
+</div>
+<!-- ส่วนกรอกข้อมูลสำหรับ "อื่นๆ" -->
+<div id="otherInputGroup3" style="display: none;"> 
+<label for="other_building_usage3">วัสดุผนังภายนอกของอาคาร อื่นๆ</label>
+<input type="text" id="other_building_usage3" name="entry.18492040">
+</div>
+<script>
+const otherCheckbox3 = document.getElementById('otherCheckbox3');
+const otherInputGroup3 = document.getElementById('otherInputGroup3');
+otherCheckbox3.addEventListener('change', function () {
+otherInputGroup3.style.display = this.checked ? 'block' : 'none';
+  });
+</script>
+
+
+<style>
+  .compact-checkbox label {
+    display: flex;
+    align-items: center;
+    margin: 2px 0;
+    font-size: 14px;
+  }
+  .compact-checkbox input[type="checkbox"] {
+    margin-right: 6px;
+  }
+</style>
+<!-- วัสดุผนังกั้นภายในของอาคาร -->
+<label for="interior_wall_material">วัสดุผนังกั้นภายในของอาคาร (เลือกได้มากกว่า 1 ข้อ)</label>
+<div class="compact-checkbox" id="interior_wall_material">
+  <label><input type="checkbox" name="entry.794244517" value="ผนังอิฐก่อ"> ผนังอิฐก่อ</label>
+  <label><input type="checkbox" name="entry.794244517" value="ผนังเบา"> ผนังเบา</label>
+  <label><input type="checkbox" name="entry.794244517" value="ผนังแผ่นคอนกรีต"> ผนังแผ่นคอนกรีต</label>
+  <label><input type="checkbox" name="entry.794244517" value="ผนังกระจก"> ผนังกระจก</label>
+  <label><input type="checkbox" name="entry.794244517" value="ผนังไม้"> ผนังไม้</label>
+  <label><input type="checkbox" name="entry.794244517" value="อื่นๆ"id="otherCheckbox4"> อื่นๆ</label>
+</div>
+<!-- ส่วนกรอกข้อมูลสำหรับ "อื่นๆ" -->
+<div id="otherInputGroup4" style="display: none;"> 
+<label for="other_building_usage4">วัสดุผนังกั้นภายในของอาคาร อื่นๆ</label>
+<input type="text" id="other_building_usage4" name="entry.1844699889">
+</div>
+<script>
+const otherCheckbox4 = document.getElementById('otherCheckbox4');
+const otherInputGroup4 = document.getElementById('otherInputGroup4');
+otherCheckbox4.addEventListener('change', function () {
+otherInputGroup4.style.display = this.checked ? 'block' : 'none';
+  });
+</script>
+
+            
+<!-- อันตรายจากอาคารข้างเคียง -->
+<h3>ส่วนที่ 3 อันตรายจากสภาพโดยรอบอาคาร</h3>
+<div style="display: flex; gap: 150px; justify-content: center;">
+<img src="อันตรายจากอาคารข้างเคียง_3.png" alt="รูปตัวอย่างที่ 3.1" width="200" style="border-radius: 1px;">
+<img src="อันตรายจากอาคารข้างเคียง_2.png" alt="รูปตัวอย่างที่ 3.2" width="200" style="border-radius: 1px;">
+</div>
+<label>อันตรายจากอาคารข้างเคียง เช่น อาคารข้างเคียงเอียงและอาจพังถล่มได้ , เศษวัสดุร่วงหล่นจากอาคารข้างเคียง</label>
+<div class="compact-radio">
+  <label>
+    <input type="radio" name="entry.1571221545" value="มี" required>
+    มี
+  </label>
+  <br>
+  <label>
+    <input type="radio" name="entry.1571221545" value="ไม่มี" required>
+    ไม่มี
+  </label>
+</div>
+<br>
+<div style="display: flex; gap: 150px; justify-content: center;">
+<img src="อันตรายจากสภาพพื้นที่ตั้งอาคารและพื้นที่โดยรอบ_1.png" alt="รูปตัวอย่างที่ 3.3" width="200" style="border-radius: 1px;">
+<img src="อันตรายจากสภาพพื้นที่ตั้งอาคารและพื้นที่โดยรอบ_2.png" alt="รูปตัวอย่างที่ 3.4" width="200" style="border-radius: 1px;">
+</div>
+<label>อันตรายจากสภาพพื้นที่ตั้งอาคารและพื้นที่โดยรอบ เช่น การถล่มของลาดเชิงเขา/ตลิ่ง , พื้นดินที่ตั้งอาคารมีการทรุดตัว/แยกตัว</label>
+<div class="compact-radio">
+  <label>
+    <input type="radio" name="entry.585443346" value="มี" required>
+    มี
+  </label>
+  <br>
+  <label>
+    <input type="radio" name="entry.585443346" value="ไม่มี" required>
+    ไม่มี
+  </label>
+</div>
+
+
+<!-- ความเสียหายเมื่อสังเกตจากภายนอกอาคาร -->
+<h3>ส่วนที่ 4 ความเสียหายเมื่อสังเกตจากภายนอกอาคาร</h3>
+<div style="display: flex; gap: 50px; justify-content: center;">
+<img src="ความเสียหายเมื่อสังเกตจากภายนอกอาคาร_1.png" alt="รูปตัวอย่างที่ 4.1" width="200" style="border-radius: 1px;">
+<img src="ความเสียหายเมื่อสังเกตจากภายนอกอาคาร_2.png" alt="รูปตัวอย่างที่ 4.2" width="200" style="border-radius: 1px;">
+<img src="ความเสียหายเมื่อสังเกตจากภายนอกอาคาร_3.png" alt="รูปตัวอย่างที่ 4.3" width="200" style="border-radius: 1px;">
+<img src="ความเสียหายเมื่อสังเกตจากภายนอกอาคาร_4.png" alt="รูปตัวอย่างที่ 4.4" width="200" style="border-radius: 1px;">
+</div>
+<label>ความเสียหายเมื่อสังเกตจากภายนอกอาคาร</label>
+<div class="compact-radio">
+  <label>
+    <input type="radio" name="entry.1257329136" value="โครงสร้างอาคารมีการพังถล่มทั้งหมด/บางส่วน" required>
+    โครงสร้างอาคารมีการพังถล่มทั้งหมด/บางส่วน
+  </label>
+  <br>
+  <label>
+    <input type="radio" name="entry.1257329136" value="อาคารเกิดการทรุดตัวหรือเอียงอย่างเห็นได้ชัด" required>
+    อาคารเกิดการทรุดตัวหรือเอียงอย่างเห็นได้ชัด
+  </label>
+  <br>
+  <label>
+    <input type="radio" name="entry.1257329136" value="อาคารเกิดการเคลื่อนตัวระหว่างชั้นที่ติดกันอย่างเห็นได้ชัด" required>
+    อาคารเกิดการเคลื่อนตัวระหว่างชั้นที่ติดกันอย่างเห็นได้ชัด
+  </label>
+  <br>
+  <label>
+    <input type="radio" name="entry.1257329136" value="อาคารโครงสร้างอิฐก่อมีรอยแตกร้าวหรือความเสียหายที่ผนังอย่างเห็นได้ชัด" required>
+    อาคารโครงสร้างอิฐก่อมีรอยแตกร้าวหรือความเสียหายที่ผนังอย่างเห็นได้ชัด
+  </label>
+  <br>
+  <label>
+    <input type="radio" name="entry.1257329136" value="อาคารเคลื่อนหลุดออกจากฐานราก" required>
+    อาคารเคลื่อนหลุดออกจากฐานราก
+  </label>
+</div>
+
+<!-- ส่วนที่ 5 ความเสียหายของโครงสร้างอาคาร -->
+<h3>ส่วนที่ 5 ความเสียหายของโครงสร้างอาคาร</h3>
+<div style="display: flex; gap: 150px; justify-content: center;">
+<img src="โครงสร้างไม้_1.png" alt="รูปตัวอย่างที่ 5.1" width="200" style="border-radius: 1px;">
+<img src="โครงสร้างไม้_2.png" alt="รูปตัวอย่างที่ 5.2" width="200" style="border-radius: 1px;">
+</div>
+<!-- โครงสร้างไม้ -->
+<label>โครงสร้างไม้</label>
+<div class="compact-radio">
+  <label>
+    <input type="radio" name="entry.767144429" value="เกิดการฉีกขาดของจุดเชื่อมต่อโครงสร้างไม้ (บริเวณ)" required onchange="toggleWoodFields()">
+    เกิดการฉีกขาดของจุดเชื่อมต่อโครงสร้างไม้ (บริเวณ)
+  </label>
+  <br>
+  <label>
+    <input type="radio" name="entry.767144429" value="เกิดการวิบัติของชิ้นส่วนโครงสร้างไม้เช่น การฉีกขาดขนานเสี้ยน การฉีกขาดตั้งฉากเสี้ยน การหัก" required onchange="toggleWoodFields()">
+    เกิดการวิบัติของชิ้นส่วนโครงสร้างไม้เช่น การฉีกขาดขนานเสี้ยน การฉีกขาดตั้งฉากเสี้ยน การหัก
+  </label>
+</div>
+<div id="wood_damage_area_group" style="display:none; margin-top: 10px;">
+  <label for="wood_damage_area">บริเวณเกิดการฉีกขาดของจุดเชื่อมต่อโครงสร้างไม้</label>
+  <input type="text" id="wood_damage_area" name="entry.756346639">
+</div>
+<div id="wood_damage_description_group" style="display:none; margin-top: 10px;">
+  <label for="wood_damage_description">บริเวณเกิดการวิบัติของชิ้นส่วนโครงสร้างไม้ เช่น การฉีกขาดขนานเสี้ยน การฉีกขาดตั้งฉากเสี้ยน การหัก เป็นต้น</label>
+  <input type="text" id="wood_damage_description" name="entry.1817283435">
+</div>
+<script>
+function toggleWoodFields() {
+  const selected = document.querySelector('input[name="entry.767144429"]:checked')?.value;
+  document.getElementById('wood_damage_area_group').style.display = (selected === 'เกิดการฉีกขาดของจุดเชื่อมต่อโครงสร้างไม้ (บริเวณ)') ? 'block' : 'none';
+  document.getElementById('wood_damage_description_group').style.display = (selected?.includes('เกิดการวิบัติของชิ้นส่วนโครงสร้างไม้')) ? 'block' : 'none';
+}
+</script>
+
+<!-- โครงสร้างคอนกรีตเสริมเหล็ก -->
+<h3>โครงสร้างคอนกรีตเสริมเหล็ก</h3>
+<div style="text-align: center;">
+<img src="ผิวพื้นด้านบน.png" alt="รูปตัวอย่างที่ 5.3" width="900" style="border-radius: 1px;">
+</div>
+<!-- ผิวพื้นด้านบน/ล่าง -->
+<label for="floor_damage">ผิวพื้นด้านบน/ล่าง</label>
+<div>
+  <label>
+    <input type="radio" id="floor_damage_1" name="entry.833466453" value="ไม่มี/มีรอยแตกร้าวขนาดเล็ก" onchange="toggleFloorDamageFields()">
+    ไม่มี/มีรอยแตกร้าวขนาดเล็ก
+  </label>
+</div>
+<div>
+  <label>
+    <input type="radio" id="floor_damage_2" name="entry.833466453" value="มีรอยแตกร้าวเห็นได้ชัดเจน" onchange="toggleFloorDamageFields()">
+    มีรอยแตกร้าวเห็นได้ชัดเจน
+  </label>
+</div>
+<div>
+  <label>
+    <input type="radio" id="floor_damage_3" name="entry.833466453" value="มีรอยฉีกขาดอย่างรุนแรง" onchange="toggleFloorDamageFields()">
+    มีรอยฉีกขาดอย่างรุนแรง
+  </label>
+</div>
+<div id="floor_damage_area_group" style="display:none; margin-top: 10px;">
+  <label for="floor_damage_area">บริเวณที่ไม่มี/มีรอยแตกร้าวขนาดเล็ก ผิวพื้นด้านบน/ล่าง</label>
+  <input type="text" id="floor_damage_area" name="entry.1982183434">
+</div>
+<div id="floor_damage_area_2_group" style="display:none; margin-top: 10px;">
+  <label for="floor_damage_area_2">บริเวณที่มีรอยแตกร้าวเห็นได้ชัดเจน ผิวพื้นด้านบน/ล่าง</label>
+  <input type="text" id="floor_damage_area_2" name="entry.1722591786">
+</div>
+<div id="floor_damage_area_3_group" style="display:none; margin-top: 10px;">
+  <label for="floor_damage_area_3">บริเวณที่มีรอยฉีกขาดอย่างรุนแรง ผิวพื้นด้านบน/ล่าง</label>
+  <input type="text" id="floor_damage_area_3" name="entry.267253127">
+</div>
+<script>
+function toggleFloorDamageFields() {
+  const selectedOption = document.querySelector('input[name="833466453"]:checked');
+  document.getElementById('floor_damage_area_group').style.display =
+    selectedOption && selectedOption.value === 'ไม่มี/มีรอยแตกร้าวขนาดเล็ก' ? 'block' : 'none';
+  document.getElementById('floor_damage_area_2_group').style.display =
+    selectedOption && selectedOption.value === 'มีรอยแตกร้าวเห็นได้ชัดเจน' ? 'block' : 'none';
+  document.getElementById('floor_damage_area_3_group').style.display =
+    selectedOption && selectedOption.value === 'มีรอยฉีกขาดอย่างรุนแรง' ? 'block' : 'none';
+}
+</script>
+<br>
+
+<!-- ผิวพื้นรอบๆ เสา -->
+<div style="text-align: center;">
+<img src="ผิวพื้นรอบๆ เสา.png" alt="รูปตัวอย่างที่ 5.4" width="900" style="border-radius: 1px;">
+</div>
+<label for="pillar_floor_damage">ผิวพื้นรอบๆ เสา</label>
+<div>
+  <label>
+    <input type="radio" id="pillar_floor_damage_1" name="entry.382101729" value="ไม่มี/มีรอยแตกร้าวขนาดเล็ก" onchange="togglePillarFloorFields()">
+    ไม่มี/มีรอยแตกร้าวขนาดเล็ก
+  </label>
+</div>
+<div>
+  <label>
+    <input type="radio" id="pillar_floor_damage_2" name="entry.382101729" value="มีรอยแตกร้าวเห็นได้ชัดเจน" onchange="togglePillarFloorFields()">
+    มีรอยแตกร้าวเห็นได้ชัดเจน
+  </label>
+</div>
+<div>
+  <label>
+    <input type="radio" id="pillar_floor_damage_3" name="entry.382101729" value="มีรอยฉีกขาดอย่างรุนแรง" onchange="togglePillarFloorFields()">
+    มีรอยฉีกขาดอย่างรุนแรง
+  </label>
+</div>
+<div id="pillar_floor_damage_area_group" style="display:none; margin-top: 10px;">
+  <label for="pillar_floor_damage_area">บริเวณที่ไม่มี/มีรอยแตกร้าวขนาดเล็ก ผิวพื้นรอบๆ เสา</label>
+  <input type="text" id="pillar_floor_damage_area" name="entry.1242837831">
+</div>
+<div id="pillar_floor_damage_area_2_group" style="display:none; margin-top: 10px;">
+  <label for="pillar_floor_damage_area_2">บริเวณที่มีรอยแตกร้าวเห็นได้ชัดเจน ผิวพื้นรอบๆ เสา</label>
+  <input type="text" id="pillar_floor_damage_area_2" name="entry.915768864">
+</div>
+<div id="pillar_floor_damage_area_3_group" style="display:none; margin-top: 10px;">
+  <label for="pillar_floor_damage_area_3">บริเวณที่มีรอยฉีกขาดอย่างรุนแรง ผิวพื้นรอบๆ เสา</label>
+  <input type="text" id="pillar_floor_damage_area_3" name="entry.1195723392">
+</div>
+<script>
+function togglePillarFloorFields() {
+  const selectedOption = document.querySelector('input[name="entry.382101729"]:checked'); 
+  document.getElementById('pillar_floor_damage_area_group').style.display =
+    selectedOption && selectedOption.value === 'ไม่มี/มีรอยแตกร้าวขนาดเล็ก' ? 'block' : 'none';
+  document.getElementById('pillar_floor_damage_area_2_group').style.display =
+    selectedOption && selectedOption.value === 'มีรอยแตกร้าวเห็นได้ชัดเจน' ? 'block' : 'none';
+  document.getElementById('pillar_floor_damage_area_3_group').style.display =
+    selectedOption && selectedOption.value === 'มีรอยฉีกขาดอย่างรุนแรง' ? 'block' : 'none';
+}
+</script>
+<br>
+
+<!-- รอยต่อระหว่างพื้นและคาน -->
+<div style="text-align: center;">
+<img src="รอยต่อระหว่างพื้นและคาน.png" alt="รูปตัวอย่างที่ 5.5" width="900" style="border-radius: 1px;">
+</div>
+<label for="floor_beam_joint_damage">รอยต่อระหว่างพื้นและคาน</label>
+<div>
+  <label>
+    <input type="radio" id="floor_beam_joint_damage_1" name="entry.785998821" value="ไม่มี/มีรอยแตกร้าวขนาดเล็ก" onchange="toggleFloorBeamJointFields()">
+    ไม่มี/มีรอยแตกร้าวขนาดเล็ก
+  </label>
+</div>
+<div>
+  <label>
+    <input type="radio" id="floor_beam_joint_damage_2" name="entry.785998821" value="มีรอยแตกร้าวเห็นได้ชัดเจน" onchange="toggleFloorBeamJointFields()">
+    มีรอยแตกร้าวเห็นได้ชัดเจน
+  </label>
+</div>
+<div>
+  <label>
+    <input type="radio" id="floor_beam_joint_damage_3" name="entry.785998821" value="มีรอยฉีกขาดอย่างรุนแรง" onchange="toggleFloorBeamJointFields()">
+    มีรอยฉีกขาดอย่างรุนแรง
+  </label>
+</div>
+<div id="floor_beam_joint_damage_area_group" style="display:none; margin-top: 10px;">
+  <label for="floor_beam_joint_damage_area">บริเวณที่ไม่มี/มีรอยแตกร้าวขนาดเล็ก รอยต่อระหว่างพื้นและคาน</label>
+  <input type="text" id="floor_beam_joint_damage_area" name="entry.1649205562">
+</div>
+<div id="floor_beam_joint_damage_area_2_group" style="display:none; margin-top: 10px;">
+  <label for="floor_beam_joint_damage_area_2">บริเวณที่มีรอยแตกร้าวเห็นได้ชัดเจน รอยต่อระหว่างพื้นและคาน</label>
+  <input type="text" id="floor_beam_joint_damage_area_2" name="entry.2048730406">
+</div>
+<div id="floor_beam_joint_damage_area_3_group" style="display:none; margin-top: 10px;">
+  <label for="floor_beam_joint_damage_area_3">บริเวณที่มีรอยฉีกขาดอย่างรุนแรง รอยต่อระหว่างพื้นและคาน</label>
+  <input type="text" id="floor_beam_joint_damage_area_3" name="entry.907286984">
+</div>
+<script>
+function toggleFloorBeamJointFields() {
+  const selectedOption = document.querySelector('input[name="entry.785998821"]:checked');
+  document.getElementById('floor_beam_joint_damage_area_group').style.display =
+    selectedOption && selectedOption.value === 'ไม่มี/มีรอยแตกร้าวขนาดเล็ก' ? 'block' : 'none';
+  document.getElementById('floor_beam_joint_damage_area_2_group').style.display =
+    selectedOption && selectedOption.value === 'มีรอยแตกร้าวเห็นได้ชัดเจน' ? 'block' : 'none';
+  document.getElementById('floor_beam_joint_damage_area_3_group').style.display =
+    selectedOption && selectedOption.value === 'มีรอยฉีกขาดอย่างรุนแรง' ? 'block' : 'none';
+}
+</script>
+<br>
+
+<!-- ช่วงกลางคาน -->
+<div style="text-align: center;">
+<img src="ช่วงกลางคาน.png" alt="รูปตัวอย่างที่ 5.6" width="900" style="border-radius: 1px;">
+</div>
+<label for="beam_middle_damage">ช่วงกลางคาน</label>
+<div>
+  <label>
+    <input type="radio" id="beam_middle_damage_1" name="entry.1178695947" value="ไม่มี/มีรอยแตกร้าวขนาดเล็ก" onchange="toggleBeamMiddleFields()">
+    ไม่มี/มีรอยแตกร้าวขนาดเล็ก
+  </label>
+</div>
+<div>
+  <label>
+    <input type="radio" id="beam_middle_damage_2" name="entry.1178695947" value="มีรอยแตกร้าวเห็นได้ชัดเจน" onchange="toggleBeamMiddleFields()">
+    มีรอยแตกร้าวเห็นได้ชัดเจน
+  </label>
+</div>
+<div>
+  <label>
+    <input type="radio" id="beam_middle_damage_3" name="entry.1178695947" value="มีรอยฉีกขาดอย่างรุนแรง" onchange="toggleBeamMiddleFields()">
+    มีรอยฉีกขาดอย่างรุนแรง
+  </label>
+</div>
+<div id="beam_middle_damage_area_group" style="display:none; margin-top: 10px;">
+  <label for="beam_middle_damage_area">บริเวณที่ไม่มี/มีรอยแตกร้าวขนาดเล็ก ช่วงกลางคาน</label>
+  <input type="text" id="beam_middle_damage_area" name="entry.1001878518">
+</div>
+<div id="beam_middle_damage_area_2_group" style="display:none; margin-top: 10px;">
+  <label for="beam_middle_damage_area_2">บริเวณที่มีรอยแตกร้าวเห็นได้ชัดเจน ช่วงกลางคาน</label>
+  <input type="text" id="beam_middle_damage_area_2" name="entry.812885774">
+</div>
+<div id="beam_middle_damage_area_3_group" style="display:none; margin-top: 10px;">
+  <label for="beam_middle_damage_area_3">บริเวณที่มีรอยฉีกขาดอย่างรุนแรง ช่วงกลางคาน</label>
+  <input type="text" id="beam_middle_damage_area_3" name="entry.1121481119">
+</div>
+<script>
+function toggleBeamMiddleFields() {
+  const selectedOption = document.querySelector('input[name="entry.1178695947"]:checked');
+  document.getElementById('beam_middle_damage_area_group').style.display =
+    selectedOption && selectedOption.value === 'ไม่มี/มีรอยแตกร้าวขนาดเล็ก' ? 'block' : 'none';
+  document.getElementById('beam_middle_damage_area_2_group').style.display =
+    selectedOption && selectedOption.value === 'มีรอยแตกร้าวเห็นได้ชัดเจน' ? 'block' : 'none';
+  document.getElementById('beam_middle_damage_area_3_group').style.display =
+    selectedOption && selectedOption.value === 'มีรอยฉีกขาดอย่างรุนแรง' ? 'block' : 'none';
+}
+</script>
+<br>
+
+<!-- รอยต่อระหว่างคานและเสา -->
+<div style="text-align: center;">
+<img src="รอยต่อระหว่างคานและเสา.png" alt="รูปตัวอย่างที่ 5.7" width="900" style="border-radius: 1px;">
+</div>
+<label for="beam_column_joint_damage">รอยต่อระหว่างคานและเสา</label>
+<div>
+  <label>
+    <input type="radio" id="beam_column_joint_damage_1" name="entry.1936804659" value="ไม่มี/มีรอยแตกร้าวขนาดเล็ก" onchange="toggleBeamColumnJointFields()">
+    ไม่มี/มีรอยแตกร้าวขนาดเล็ก
+  </label>
+</div>
+<div>
+  <label>
+    <input type="radio" id="beam_column_joint_damage_2" name="entry.1936804659" value="มีรอยแตกร้าวเห็นได้ชัดเจน" onchange="toggleBeamColumnJointFields()">
+    มีรอยแตกร้าวเห็นได้ชัดเจน
+  </label>
+</div>
+<div>
+  <label>
+    <input type="radio" id="beam_column_joint_damage_3" name="entry.1936804659" value="มีรอยฉีกขาดอย่างรุนแรง" onchange="toggleBeamColumnJointFields()">
+    มีรอยฉีกขาดอย่างรุนแรง
+  </label>
+</div>
+<div id="beam_column_joint_damage_area_group" style="display:none; margin-top: 10px;">
+  <label for="beam_column_joint_damage_area">บริเวณที่ไม่มี/มีรอยแตกร้าวขนาดเล็ก รอยต่อระหว่างคานและเสา</label>
+  <input type="text" id="beam_column_joint_damage_area" name="entry.2009724048">
+</div>
+<div id="beam_column_joint_damage_area_2_group" style="display:none; margin-top: 10px;">
+  <label for="beam_column_joint_damage_area_2">บริเวณที่มีรอยแตกร้าวเห็นได้ชัดเจน รอยต่อระหว่างคานและเสา</label>
+  <input type="text" id="beam_column_joint_damage_area_2" name="entry.1255072793">
+</div>
+<div id="beam_column_joint_damage_area_3_group" style="display:none; margin-top: 10px;">
+  <label for="beam_column_joint_damage_area_3">บริเวณที่มีรอยฉีกขาดอย่างรุนแรง รอยต่อระหว่างคานและเสา</label>
+  <input type="text" id="beam_column_joint_damage_area_3" name="entry.1021549313">
+</div>
+<script>
+function toggleBeamColumnJointFields() {
+  const selectedOption = document.querySelector('input[name="entry.1936804659"]:checked');
+  document.getElementById('beam_column_joint_damage_area_group').style.display =
+    selectedOption && selectedOption.value === 'ไม่มี/มีรอยแตกร้าวขนาดเล็ก' ? 'block' : 'none';
+  document.getElementById('beam_column_joint_damage_area_2_group').style.display =
+    selectedOption && selectedOption.value === 'มีรอยแตกร้าวเห็นได้ชัดเจน' ? 'block' : 'none';
+  document.getElementById('beam_column_joint_damage_area_3_group').style.display =
+    selectedOption && selectedOption.value === 'มีรอยฉีกขาดอย่างรุนแรง' ? 'block' : 'none';
+}
+</script>
+<br>
+
+<!-- ช่วงเสา -->
+<div style="text-align: center;">
+<img src="ช่วงเสา.png" alt="รูปตัวอย่างที่ 5.8" width="900" style="border-radius: 1px;">
+</div>
+<label for="column_damage">ช่วงเสา</label>
+<div>
+  <label>
+    <input type="radio" id="column_damage_1" name="entry.1541791508" value="ไม่มี/มีรอยแตกร้าวขนาดเล็ก" onchange="toggleColumnDamageFields()">
+    ไม่มี/มีรอยแตกร้าวขนาดเล็ก
+  </label>
+</div>
+<div>
+  <label>
+    <input type="radio" id="column_damage_2" name="entry.1541791508" value="มีรอยแตกร้าวเห็นได้ชัดเจน" onchange="toggleColumnDamageFields()">
+    มีรอยแตกร้าวเห็นได้ชัดเจน
+  </label>
+</div>
+<div>
+  <label>
+    <input type="radio" id="column_damage_3" name="entry.1541791508" value="มีรอยฉีกขาดอย่างรุนแรง" onchange="toggleColumnDamageFields()">
+    มีรอยฉีกขาดอย่างรุนแรง
+  </label>
+</div>
+<div id="column_damage_area_group" style="display:none; margin-top: 10px;">
+  <label for="column_damage_area">บริเวณที่ไม่มี/มีรอยแตกร้าวขนาดเล็ก ช่วงเสา</label>
+  <input type="text" id="column_damage_area" name="entry.2059797809">
+</div>
+<div id="column_damage_area_2_group" style="display:none; margin-top: 10px;">
+  <label for="column_damage_area_2">บริเวณที่มีรอยแตกร้าวเห็นได้ชัดเจน ช่วงเสา</label>
+  <input type="text" id="column_damage_area_2" name="entry.545354913">
+</div>
+<div id="column_damage_area_3_group" style="display:none; margin-top: 10px;">
+  <label for="column_damage_area_3">บริเวณที่มีรอยฉีกขาดอย่างรุนแรง ช่วงเสา</label>
+  <input type="text" id="column_damage_area_3" name="entry.2125509336">
+</div>
+<script>
+function toggleColumnDamageFields() {
+  const selectedOption = document.querySelector('input[name="entry.1541791508"]:checked');
+  document.getElementById('column_damage_area_group').style.display =
+    selectedOption && selectedOption.value === 'ไม่มี/มีรอยแตกร้าวขนาดเล็ก' ? 'block' : 'none';
+  document.getElementById('column_damage_area_2_group').style.display =
+    selectedOption && selectedOption.value === 'มีรอยแตกร้าวเห็นได้ชัดเจน' ? 'block' : 'none';
+  document.getElementById('column_damage_area_3_group').style.display =
+    selectedOption && selectedOption.value === 'มีรอยฉีกขาดอย่างรุนแรง' ? 'block' : 'none';
+}
+</script>
+<br>
+
+<!-- จุดต่อเสา-คาน -->
+<div style="text-align: center;">
+<img src="จุดต่อเสา-คาน.png" alt="รูปตัวอย่างที่ 5.9" width="900" style="border-radius: 1px;">
+</div>
+<label for="column_beam_joint_damage">จุดต่อเสา-คาน</label>
+<div>
+  <label>
+    <input type="radio" id="column_beam_joint_damage_1" name="entry.173175970" value="ไม่มี/มีรอยแตกร้าวขนาดเล็ก" onchange="toggleColumnBeamJointFields()">
+    ไม่มี/มีรอยแตกร้าวขนาดเล็ก
+  </label>
+</div>
+<div>
+  <label>
+    <input type="radio" id="column_beam_joint_damage_2" name="entry.173175970" value="มีรอยแตกร้าวเห็นได้ชัดเจน" onchange="toggleColumnBeamJointFields()">
+    มีรอยแตกร้าวเห็นได้ชัดเจน
+  </label>
+</div>
+<div>
+  <label>
+    <input type="radio" id="column_beam_joint_damage_3" name="entry.173175970" value="มีรอยฉีกขาดอย่างรุนแรง" onchange="toggleColumnBeamJointFields()">
+    มีรอยฉีกขาดอย่างรุนแรง
+  </label>
+</div>
+<div id="column_beam_joint_damage_area_group" style="display:none; margin-top: 10px;">
+  <label for="column_beam_joint_damage_area">บริเวณที่ไม่มี/มีรอยแตกร้าวขนาดเล็ก จุดต่อเสา-คาน</label>
+  <input type="text" id="column_beam_joint_damage_area" name="entry.1303472040" required>
+</div>
+<div id="column_beam_joint_damage_area_2_group" style="display:none; margin-top: 10px;">
+  <label for="column_beam_joint_damage_area_2">บริเวณที่มีรอยแตกร้าวเห็นได้ชัดเจน จุดต่อเสา-คาน</label>
+  <input type="text" id="column_beam_joint_damage_area_2" name="entry.785817192" required>
+</div>
+<div id="column_beam_joint_damage_area_3_group" style="display:none; margin-top: 10px;">
+  <label for="column_beam_joint_damage_area_3">บริเวณที่มีรอยฉีกขาดอย่างรุนแรง จุดต่อเสา-คาน</label>
+  <input type="text" id="column_beam_joint_damage_area_3" name="entry.816614265" required>
+</div>
+<script>
+function toggleColumnBeamJointFields() {
+  const selectedOption = document.querySelector('input[name="entry.173175970"]:checked');
+  document.getElementById('column_beam_joint_damage_area_group').style.display =
+    selectedOption && selectedOption.value === 'ไม่มี/มีรอยแตกร้าวขนาดเล็ก' ? 'block' : 'none';
+  document.getElementById('column_beam_joint_damage_area_2_group').style.display =
+    selectedOption && selectedOption.value === 'มีรอยแตกร้าวเห็นได้ชัดเจน' ? 'block' : 'none';
+  document.getElementById('column_beam_joint_damage_area_3_group').style.display =
+    selectedOption && selectedOption.value === 'มีรอยฉีกขาดอย่างรุนแรง' ? 'block' : 'none';
+}
+</script>
+<br>
+
+<!-- กำแพง คสล. -->
+<div style="text-align: center;">
+<img src="กำแพง คสล..png" alt="รูปตัวอย่างที่ 5.10" width="900" style="border-radius: 1px;">
+</div>
+<label for="konstrukt_wall_damage">กำแพง คสล.</label>
+<div>
+  <label>
+    <input type="radio" id="konstrukt_wall_damage_1" name="entry.1263628193" value="ไม่มี/มีรอยแตกร้าวขนาดเล็ก" onchange="toggleKonstruktWallFields()">
+    ไม่มี/มีรอยแตกร้าวขนาดเล็ก
+  </label>
+</div>
+<div>
+  <label>
+    <input type="radio" id="konstrukt_wall_damage_2" name="entry.1263628193" value="มีรอยแตกร้าวเห็นได้ชัดเจน" onchange="toggleKonstruktWallFields()">
+    มีรอยแตกร้าวเห็นได้ชัดเจน
+  </label>
+</div>
+<div>
+  <label>
+    <input type="radio" id="konstrukt_wall_damage_3" name="entry.1263628193" value="มีรอยฉีกขาดอย่างรุนแรง" onchange="toggleKonstruktWallFields()">
+    มีรอยฉีกขาดอย่างรุนแรง
+  </label>
+</div>
+<div id="konstrukt_wall_damage_area_group" style="display:none; margin-top: 10px;">
+  <label for="konstrukt_wall_damage_area">บริเวณที่ไม่มี/มีรอยแตกร้าวขนาดเล็ก กำแพง คสล.</label>
+  <input type="text" id="konstrukt_wall_damage_area" name="entry.2076564423" required>
+</div>
+<div id="konstrukt_wall_damage_area_2_group" style="display:none; margin-top: 10px;">
+  <label for="konstrukt_wall_damage_area_2">บริเวณที่มีรอยแตกร้าวเห็นได้ชัดเจน กำแพง คสล.</label>
+  <input type="text" id="konstrukt_wall_damage_area_2" name="entry.1711158474" required>
+</div>
+<div id="konstrukt_wall_damage_area_3_group" style="display:none; margin-top: 10px;">
+  <label for="konstrukt_wall_damage_area_3">บริเวณที่มีรอยฉีกขาดอย่างรุนแรง กำแพง คสล.</label>
+  <input type="text" id="konstrukt_wall_damage_area_3" name="entry.1051839376" required>
+</div>
+<script>
+function toggleKonstruktWallFields() {
+  const selectedOption = document.querySelector('input[name="konstrukt_wall_damage"]:checked');
+  document.getElementById('konstrukt_wall_damage_area_group').style.display =
+    selectedOption && selectedOption.value === 'ไม่มี/มีรอยแตกร้าวขนาดเล็ก' ? 'block' : 'none';
+  document.getElementById('konstrukt_wall_damage_area_2_group').style.display =
+    selectedOption && selectedOption.value === 'มีรอยแตกร้าวเห็นได้ชัดเจน' ? 'block' : 'none';
+  document.getElementById('konstrukt_wall_damage_area_3_group').style.display =
+    selectedOption && selectedOption.value === 'มีรอยฉีกขาดอย่างรุนแรง' ? 'block' : 'none';
+}
+</script>
+
+
+<!-- โครงสร้างเหล็กรูปพรรณ - คาน -->
+<h3>โครงสร้างเหล็กรูปพรรณ (คู่มือ หน้า 18-25) </h3>
+<div style="text-align: center;">
+<img src="ส่วนโครงสร้าง (คาน).png" alt="รูปตัวอย่างที่ 5.11" width="500" style="border-radius: 1px;">
+</div>
+<strong>ส่วนโครงสร้าง (คาน)</strong>
+<label><input type="radio" name="entry.1776854849" value="ส่วนเอวเกิดการฉีกขาด มากกว่า 1 จุดต่อชั้น" onclick="toggleBeamStructureFields()"> ส่วนเอวเกิดการฉีกขาด มากกว่า 1 จุดต่อชั้น</label>
+<label><input type="radio" name="entry.1776854849" value="หน้าตัดเกิดการโก่งเดาะด้านข้าง(คาน)" onclick="toggleBeamStructureFields()"> หน้าตัดเกิดการโก่งเดาะด้านข้าง(คาน)</label>
+<label><input type="radio" name="entry.1776854849" value="กรณี ที่หน้าตัดเกิดการโก่งเดาะด้านข้างมีมากกว่า 1 จุดต่อชั้น" onclick="toggleBeamStructureFields()"> กรณี ที่หน้าตัดเกิดการโก่งเดาะด้านข้างมีมากกว่า 1 จุดต่อชั้น</label>
+<div id="beam_damage_area_group" style="display:none; margin-top: 10px;">
+  <label for="beam_damage_area">บริเวณที่เกิดความเสียหาย ส่วนเอวเกิดการฉีกขาด มากกว่า 1 จุดต่อชั้น</label>
+  <input type="text" id="beam_damage_area" name="entry.1083225739">
+</div>
+<div id="beam_damage_area_2_group" style="display:none; margin-top: 10px;">
+  <label for="beam_damage_area_2">บริเวณที่เกิดความเสียหาย หน้าตัดเกิดการโก่งเดาะด้านข้าง(คาน)</label>
+  <input type="text" id="beam_damage_area_2" name="entry.2026240586">
+</div>
+<div id="beam_damage_area_3_group" style="display:none; margin-top: 10px;">
+  <label for="beam_damage_area_3">บริเวณที่เกิดความเสียหาย กรณี ที่หน้าตัดเกิดการโก่งเดาะด้านข้างมีมากกว่า 1 จุดต่อชั้น</label>
+  <input type="text" id="beam_damage_area_3" name="entry.1326807801">
+</div>
+<script>
+function toggleBeamStructureFields() {
+  const radios = document.getElementsByName('entry.1776854849');
+  const value = Array.from(radios).find(r => r.checked)?.value;
+  document.getElementById('beam_damage_area_group').style.display = 'none';
+  document.getElementById('beam_damage_area_2_group').style.display = 'none';
+  document.getElementById('beam_damage_area_3_group').style.display = 'none';
+  if (value === 'ส่วนเอวเกิดการฉีกขาด มากกว่า 1 จุดต่อชั้น') {
+    document.getElementById('beam_damage_area_group').style.display = 'block';
+  } else if (value === 'หน้าตัดเกิดการโก่งเดาะด้านข้าง(คาน)') {
+    document.getElementById('beam_damage_area_2_group').style.display = 'block';
+  } else if (value === 'กรณี ที่หน้าตัดเกิดการโก่งเดาะด้านข้างมีมากกว่า 1 จุดต่อชั้น') {
+    document.getElementById('beam_damage_area_3_group').style.display = 'block';
+  }
+}
+</script>
+<br>
+
+<div style="text-align: center;">
+<img src="ส่วนโครงสร้าง (เสา).png" alt="รูปตัวอย่างที่ 5.12" width="500" style="border-radius: 1px;">
+</div>
+<strong>ส่วนโครงสร้าง (เสา)</strong>
+<label><input type="radio" name="entry.790681047" value="ส่วนปีกเกิดรอยร้าวตลอดความลึก มากกว่า 1 จุดต่อชั้น" onclick="toggleColumnStructureFields()"> ส่วนปีกเกิดรอยร้าวตลอดความลึก มากกว่า 1 จุดต่อชั้น</label>
+<label><input type="radio" name="entry.790681047" value="ส่วนปีกเกิดการโก่งเดาะ มากกว่า 1 จุดต่อชั้น" onclick="toggleColumnStructureFields()"> ส่วนปีกเกิดการโก่งเดาะ มากกว่า 1 จุดต่อชั้น</label>
+<label><input type="radio" name="entry.790681047" value="การวิบัติบริเวณรอยต่อเชื่อมเสา" onclick="toggleColumnStructureFields()"> การวิบัติบริเวณรอยต่อเชื่อมเสา</label>
+<label><input type="radio" name="entry.790681047" value="กรณี ที่การวิบัติบริเวณรอยต่อเชื่อมเสา มีมากกว่า 1 จุดต่อชั้น" onclick="toggleColumnStructureFields()"> กรณี ที่การวิบัติบริเวณรอยต่อเชื่อมเสา มีมากกว่า 1 จุดต่อชั้น</label>
+<label><input type="radio" name="entry.790681047" value="หน้าตัดเกิดการโก่งเดาะด้านข้าง" onclick="toggleColumnStructureFields()"> หน้าตัดเกิดการโก่งเดาะด้านข้าง</label>
+<label><input type="radio" name="entry.790681047" value="กรณี ที่หน้าตัดเกิดการโก่งเดาะด้านข้าง มีมากกว่า 1 จุดต่อชั้น" onclick="toggleColumnStructureFields()"> กรณี ที่หน้าตัดเกิดการโก่งเดาะด้านข้าง มีมากกว่า 1 จุดต่อชั้น</label>
+<div id="column_damage_area_group" style="display:none; margin-top: 10px;">
+  <label for="column_damage_area">บริเวณที่เกิดความเสียหาย ส่วนปีกเกิดรอยร้าวตลอดความลึก มากกว่า 1 จุดต่อชั้น</label>
+  <input type="text" id="column_damage_area" name="entry.1760253683">
+</div>
+<div id="column_damage_area_2_group" style="display:none; margin-top: 10px;">
+  <label for="column_damage_area_2">บริเวณที่เกิดความเสียหาย ส่วนปีกเกิดการโก่งเดาะ มากกว่า 1 จุดต่อชั้น</label>
+  <input type="text" id="column_damage_area_2" name="entry.1884629337">
+</div>
+<div id="column_damage_area_3_group" style="display:none; margin-top: 10px;">
+  <label for="column_damage_area_3">บริเวณที่เกิดความเสียหาย การวิบัติบริเวณรอยต่อเชื่อมเสา</label>
+  <input type="text" id="column_damage_area_3" name="entry.1153550106">
+</div>
+<div id="column_damage_area_4_group" style="display:none; margin-top: 10px;">
+  <label for="column_damage_area_4">บริเวณที่เกิดความเสียหาย กรณี ที่การวิบัติบริเวณรอยต่อเชื่อมเสา มีมากกว่า 1 จุดต่อชั้น</label>
+  <input type="text" id="column_damage_area_4" name="entry.1173584270">
+</div>
+<div id="column_damage_area_5_group" style="display:none; margin-top: 10px;">
+  <label for="column_damage_area_5">บริเวณที่เกิดความเสียหาย หน้าตัดเกิดการโก่งเดาะด้านข้าง(เสา)</label>
+  <input type="text" id="column_damage_area_5" name="entry.866766085">
+</div>
+<div id="column_damage_area_6_group" style="display:none; margin-top: 10px;">
+  <label for="column_damage_area_6">บริเวณที่เกิดความเสียหาย กรณี ที่หน้าตัดเกิดการโก่งเดาะด้านข้าง มีมากกว่า 1 จุดต่อชั้น</label>
+  <input type="text" id="column_damage_area_6" name="entry.1749912725">
+</div>
+<script>
+function toggleColumnStructureFields() {
+  const radios = document.getElementsByName('entry.790681047');
+  const value = Array.from(radios).find(r => r.checked)?.value;
+  // Hide all damage area fields first
+  document.getElementById('column_damage_area_group').style.display = 'none';
+  document.getElementById('column_damage_area_2_group').style.display = 'none';
+  document.getElementById('column_damage_area_3_group').style.display = 'none';
+  document.getElementById('column_damage_area_4_group').style.display = 'none';
+  document.getElementById('column_damage_area_5_group').style.display = 'none';
+  document.getElementById('column_damage_area_6_group').style.display = 'none';
+  // Show the corresponding damage area field based on the selected radio button
+  if (value === 'ส่วนปีกเกิดรอยร้าวตลอดความลึก มากกว่า 1 จุดต่อชั้น') {
+    document.getElementById('column_damage_area_group').style.display = 'block';
+  } else if (value === 'ส่วนปีกเกิดการโก่งเดาะ มากกว่า 1 จุดต่อชั้น') {
+    document.getElementById('column_damage_area_2_group').style.display = 'block';
+  } else if (value === 'การวิบัติบริเวณรอยต่อเชื่อมเสา') {
+    document.getElementById('column_damage_area_3_group').style.display = 'block';
+  } else if (value === 'กรณี ที่การวิบัติบริเวณรอยต่อเชื่อมเสา มีมากกว่า 1 จุดต่อชั้น') {
+    document.getElementById('column_damage_area_4_group').style.display = 'block';
+  } else if (value === 'หน้าตัดเกิดการโก่งเดาะด้านข้าง') {
+    document.getElementById('column_damage_area_5_group').style.display = 'block';
+  } else if (value === 'กรณี ที่หน้าตัดเกิดการโก่งเดาะด้านข้าง มีมากกว่า 1 จุดต่อชั้น') {
+    document.getElementById('column_damage_area_6_group').style.display = 'block';
+  }
+}
+</script>
+<br>
+
+<div style="text-align: center;">
+<img src="ส่วนโครสร้าง (เเผ่นเหล็กรับเเรงเฉือน).png" alt="รูปตัวอย่างที่ 5.13" width="500" style="border-radius: 1px;">
+</div>
+<!-- โครงสร้างเหล็กรูปพรรณ - แผ่นเหล็กรับแรงเฉือน -->
+<strong>ส่วนโครงสร้าง (แผ่นเหล็กรับแรงเฉือน)</strong>
+<label><input type="radio" name="entry.1007966041" value="แผ่นเหล็กปะกับมีรอยฉีกขาดในแนวของสลักยึด" onclick="toggleShearPlateFields()"> แผ่นเหล็กปะกับมีรอยฉีกขาดในแนวของสลักยึด</label>
+<label><input type="radio" name="entry.1007966041 value="กรณี ที่แผ่นเหล็กปะกับมีรอยฉีกขาดในแนวของสลักยึด มีมากกว่า 1 จุดต่อชั้น" onclick="toggleShearPlateFields()"> กรณี ที่แผ่นเหล็กปะกับมีรอยฉีกขาดในแนวของสลักยึด มีมากกว่า 1 จุดต่อชั้น</label>
+<label><input type="radio" name="entry.1007966041" value="แผ่นเหล็กปะกับเกิดการโก่งเดาะ มากกว่า 1 จุดต่อชั้น" onclick="toggleShearPlateFields()"> แผ่นเหล็กปะกับเกิดการโก่งเดาะ มากกว่า 1 จุดต่อชั้น</label>
+<label><input type="radio" name="entry.1007966041" value="จุดต่อเกิดการหลวมตัวเนื่องจากสลักเสียหายหรือหายไป" onclick="toggleShearPlateFields()"> จุดต่อเกิดการหลวมตัวเนื่องจากสลักเสียหายหรือหายไป</label>
+<label><input type="radio" name="entry.1007966041" value="กรณี ที่จุดต่อเกิดการหลวมตัวเนื่องจากสลักเสียหายหรือหายไป มีมากกว่า 1 จุดต่อชั้น" onclick="toggleShearPlateFields()"> กรณี ที่จุดต่อเกิดการหลวมตัวเนื่องจากสลักเสียหายหรือหายไป มีมากกว่า 1 จุดต่อชั้น</label>
+<label><input type="radio" name="entry.1007966041" value="รอยฉีกขาดตลอดความยาวของรอยเชื่อมที่ติดกับเสา" onclick="toggleShearPlateFields()"> รอยฉีกขาดตลอดความยาวของรอยเชื่อมที่ติดกับเสา</label>
+<label><input type="radio" name="entry.1007966041" value="กรณี ที่รอยฉีกขาดตลอดความยาวของรอยเชื่อมที่ติดกับเสา มีมากกว่า 1 จุดต่อชั้น" onclick="toggleShearPlateFields()"> กรณี ที่รอยฉีกขาดตลอดความยาวของรอยเชื่อมที่ติดกับเสา มีมากกว่า 1 จุดต่อชั้น</label>
+<div id="shear_plate_damage_area_group" style="display:none; margin-top: 10px;">
+  <label for="shear_plate_damage_area">บริเวณที่เกิดความเสียหาย แผ่นเหล็กปะกับมีรอยฉีกขาดในแนวของสลักยึด</label>
+  <input type="text" id="shear_plate_damage_area" name="entry.464058606">
+</div>
+<div id="shear_plate_damage_area_2_group" style="display:none; margin-top: 10px;">
+  <label for="shear_plate_damage_area_2">บริเวณที่เกิดความเสียหาย กรณี ที่แผ่นเหล็กปะกับมีรอยฉีกขาดในแนวของสลักยึด มีมากกว่า 1 จุดต่อชั้น</label>
+  <input type="text" id="shear_plate_damage_area_2" name="entry.502053435">
+</div>
+<div id="shear_plate_damage_area_3_group" style="display:none; margin-top: 10px;">
+  <label for="shear_plate_damage_area_3">บริเวณที่เกิดความเสียหาย แผ่นเหล็กปะกับเกิดการโก่งเดาะ มากกว่า 1 จุดต่อชั้น</label>
+  <input type="text" id="shear_plate_damage_area_3" name="entry.446121250">
+</div>
+<div id="shear_plate_damage_area_4_group" style="display:none; margin-top: 10px;">
+  <label for="shear_plate_damage_area_4">บริเวณที่เกิดความเสียหาย จุดต่อเกิดการหลวมตัวเนื่องจากสลักเสียหายหรือหายไป</label>
+  <input type="text" id="shear_plate_damage_area_4" name="entry.1748764223">
+</div>
+<div id="shear_plate_damage_area_5_group" style="display:none; margin-top: 10px;">
+  <label for="shear_plate_damage_area_5">บริเวณที่เกิดความเสียหาย กรณี ที่จุดต่อเกิดการหลวมตัวเนื่องจากสลักเสียหายหรือหายไป มีมากกว่า 1 จุดต่อชั้น</label>
+  <input type="text" id="shear_plate_damage_area_5" name="entry.863286056">
+</div>
+<div id="shear_plate_damage_area_6_group" style="display:none; margin-top: 10px;">
+  <label for="shear_plate_damage_area_6">บริเวณที่เกิดความเสียหาย รอยฉีกขาดตลอดความยาวของรอยเชื่อมที่ติดกับเสา</label>
+  <input type="text" id="shear_plate_damage_area_6" name="entry.593081350">
+</div>
+<div id="shear_plate_damage_area_7_group" style="display:none; margin-top: 10px;">
+  <label for="shear_plate_damage_area_7">บริเวณที่เกิดความเสียหาย กรณี ที่รอยฉีกขาดตลอดความยาวของรอยเชื่อมที่ติดกับเสา มีมากกว่า 1 จุดต่อชั้น</label>
+  <input type="text" id="shear_plate_damage_area_7" name="entry.44410740">
+</div>
+<script>
+function toggleShearPlateFields() {
+  const radios = document.getElementsByName('entry.1007966041');
+  const value = Array.from(radios).find(r => r.checked)?.value;
+  // Hide all damage area fields first
+  document.getElementById('shear_plate_damage_area_group').style.display = 'none';
+  document.getElementById('shear_plate_damage_area_2_group').style.display = 'none';
+  document.getElementById('shear_plate_damage_area_3_group').style.display = 'none';
+  document.getElementById('shear_plate_damage_area_4_group').style.display = 'none';
+  document.getElementById('shear_plate_damage_area_5_group').style.display = 'none';
+  document.getElementById('shear_plate_damage_area_6_group').style.display = 'none';
+  document.getElementById('shear_plate_damage_area_7_group').style.display = 'none';
+  // Show the corresponding damage area field based on the selected radio button
+  if (value === 'แผ่นเหล็กปะกับมีรอยฉีกขาดในแนวของสลักยึด') {
+    document.getElementById('shear_plate_damage_area_group').style.display = 'block';
+  } else if (value === 'กรณี ที่แผ่นเหล็กปะกับมีรอยฉีกขาดในแนวของสลักยึด มีมากกว่า 1 จุดต่อชั้น') {
+    document.getElementById('shear_plate_damage_area_2_group').style.display = 'block';
+  } else if (value === 'แผ่นเหล็กปะกับเกิดการโก่งเดาะ มากกว่า 1 จุดต่อชั้น') {
+    document.getElementById('shear_plate_damage_area_3_group').style.display = 'block';
+  } else if (value === 'จุดต่อเกิดการหลวมตัวเนื่องจากสลักเสียหายหรือหายไป') {
+    document.getElementById('shear_plate_damage_area_4_group').style.display = 'block';
+  } else if (value === 'กรณี ที่จุดต่อเกิดการหลวมตัวเนื่องจากสลักเสียหายหรือหายไป มีมากกว่า 1 จุดต่อชั้น') {
+    document.getElementById('shear_plate_damage_area_5_group').style.display = 'block';
+  } else if (value === 'รอยฉีกขาดตลอดความยาวของรอยเชื่อมที่ติดกับเสา') {
+    document.getElementById('shear_plate_damage_area_6_group').style.display = 'block';
+  } else if (value === 'กรณี ที่รอยฉีกขาดตลอดความยาวของรอยเชื่อมที่ติดกับเสา มีมากกว่า 1 จุดต่อชั้น') {
+    document.getElementById('shear_plate_damage_area_7_group').style.display = 'block';
+  }
+}
+</script>
+<br>
+
+<div style="text-align: center;">
+<img src="ส่วนโครงสร้าง  (บริเวณถ่ายเท แรงระหว่าง คาน-เสา).png" alt="รูปตัวอย่างที่ 5.14" width="450" style="border-radius: 1px;">
+</div>
+<!-- โครงสร้าง (บริเวณถ่ายเทแรงระหว่างคาน-เสา) -->
+<strong>ส่วนโครงสร้าง  (บริเวณถ่ายเท แรงระหว่าง คาน-เสา)</strong>
+<label><input type="radio" name="entry.1100263722" value="รอยฉีกขาดตลอดความลึกของหน้าตัดมากกว่า 1 จุด/ชั้น" onclick="toggleBeamColumnShearFields()"> รอยฉีกขาดตลอดความลึกของหน้าตัดมากกว่า 1 จุด/ชั้น</label>
+<label><input type="radio" name="entry.1100263722" value="รอยฉีกขาดตลอดความลึกของส่วนเอว" onclick="toggleBeamColumnShearFields()"> รอยฉีกขาดตลอดความลึกของส่วนเอว</label>
+<label><input type="radio" name="entry.1100263722" value="กรณี ที่รอยฉีกขาดตลอดความลึกของส่วนเอว มีมากกว่า 1 จุดต่อชั้น" onclick="toggleBeamColumnShearFields()"> กรณี ที่รอยฉีกขาดตลอดความลึกของส่วนเอว มีมากกว่า 1 จุดต่อชั้น</label>
+<div id="shear_damage_area_1_group" style="display:none; margin-top: 10px;">
+  <label for="shear_damage_area_1">บริเวณที่เกิดความเสียหาย รอยฉีกขาดตลอดความลึกของหน้าตัดมากกว่า 1 จุด/ชั้น</label>
+  <input type="text" id="shear_damage_area_1" name="entry.274450998">
+</div>
+<div id="shear_damage_area_2_group" style="display:none; margin-top: 10px;">
+  <label for="shear_damage_area_2">บริเวณที่เกิดความเสียหาย รอยฉีกขาดตลอดความลึกของส่วนเอว</label>
+  <input type="text" id="shear_damage_area_2" name="entry.711528076">
+</div>
+<div id="shear_damage_area_3_group" style="display:none; margin-top: 10px;">
+  <label for="shear_damage_area_3">บริเวณที่เกิดความเสียหาย กรณี ที่รอยฉีกขาดตลอดความลึกของส่วนเอว มีมากกว่า 1 จุดต่อชั้น</label>
+  <input type="text" id="shear_damage_area_3" name="entry.855630511">
+</div>
+<script>
+function toggleBeamColumnShearFields() {
+  const radios = document.getElementsByName('entry.1100263722');
+  const value = Array.from(radios).find(r => r.checked)?.value;
+  // Hide all damage area fields first
+  document.getElementById('shear_damage_area_1_group').style.display = 'none';
+  document.getElementById('shear_damage_area_2_group').style.display = 'none';
+  document.getElementById('shear_damage_area_3_group').style.display = 'none';
+  // Show the corresponding damage area field based on the selected radio button
+  if (value === 'รอยฉีกขาดตลอดความลึกของหน้าตัดมากกว่า 1 จุด/ชั้น') {
+    document.getElementById('shear_damage_area_1_group').style.display = 'block';
+  } else if (value === 'รอยฉีกขาดตลอดความลึกของส่วนเอว') {
+    document.getElementById('shear_damage_area_2_group').style.display = 'block';
+  } else if (value === 'กรณี ที่รอยฉีกขาดตลอดความลึกของส่วนเอว มีมากกว่า 1 จุดต่อชั้น') {
+    document.getElementById('shear_damage_area_3_group').style.display = 'block';
+  }
+}
+</script>
+
+
+<!-- โครงหลังคา -->
+<strong>โครงหลังคา</strong>
+<label><input type="radio" name="entry.1269836812" value="ไม่มีความเสียหาย" onclick="toggleRoofStructureDamageFields()"> ไม่มีความเสียหาย</label>
+<label><input type="radio" name="entry.1269836812" value="โครงสร้างรอง เช่น แป เสียหาย" onclick="toggleRoofStructureDamageFields()"> โครงสร้างรอง เช่น แป เสียหาย</label>
+<label><input type="radio" name="entry.1269836812" value="โครงสร้างหนัก เช่น จันทัน อกไก่ เสาตั้ง เสียหาย" onclick="toggleRoofStructureDamageFields()"> โครงสร้างหนัก เช่น จันทัน อกไก่ เสาตั้ง เสียหาย</label>
+<script>
+function toggleRoofStructureDamageFields() {
+  const radios = document.getElementsByName('entry.1269836812');
+  const value = Array.from(radios).find(r => r.checked)?.value;
+  // Logic for showing/hiding related fields can go here if needed
+  // For now, this just detects the selected value
+  console.log(value); // You can use this value in further logic if needed
+}
+</script>
+
+
+<!-- ส่วนที่ 6 ความเสียหายของส่วนประกอบอาคาร --> 
+<h3>ส่วนที่ 6 ความเสียหายของส่วนประกอบอาคาร</h3>
+<strong>ผนังก่อ</strong>
+<label><input type="radio" name="entry.1768215665" value="ไม่มีความเสียหาย/เสียหายเล็กน้อย ผนังก่อ" onclick="toggleWallDamageFields()"> ไม่มีความเสียหาย/เสียหายเล็กน้อย ผนังก่อ</label>
+<label><input type="radio" name="entry.1768215665" value="เสียหายมาก อาจล้มพังลงมา ผนังก่อ" onclick="toggleWallDamageFields()"> เสียหายมาก อาจล้มพังลงมา ผนังก่อ</label>
+<div id="wall_damage_area_1_group" style="display:none; margin-top: 10px;">
+  <label for="wall_damage_area_1">บริเวณที่ไม่มีความเสียหาย/เสียหายเล็กน้อย ผนังก่อ</label>
+  <input type="text" id="wall_damage_area_1" name="entry.1960877167" required>
+</div>
+<div id="wall_damage_area_2_group" style="display:none; margin-top: 10px;">
+  <label for="wall_damage_area_2">บริเวณที่เสียหายมาก อาจล้มพังลงมา ผนังก่อ</label>
+  <input type="text" id="wall_damage_area_2" name="entry.560261000" required>
+</div>
+<script>
+function toggleWallDamageFields() {
+  const radios = document.getElementsByName('entry.1768215665');
+  const value = Array.from(radios).find(r => r.checked)?.value;
+  document.getElementById('wall_damage_area_1_group').style.display = 'none';
+  document.getElementById('wall_damage_area_2_group').style.display = 'none';
+  if (value === 'ไม่มีความเสียหาย/เสียหายเล็กน้อย ผนังก่อ') {
+    document.getElementById('wall_damage_area_1_group').style.display = 'block';
+  } else if (value === 'เสียหายมาก อาจล้มพังลงมา ผนังก่อ') {
+    document.getElementById('wall_damage_area_2_group').style.display = 'block';
+  }
+}
+</script>
+
+
+<!-- ฝ้า เพดาน -->
+<strong>ฝ้า เพดาน</strong>
+<label><input type="radio" name="entry.1699926586" value="ไม่มีความเสียหาย/เสียหายเล็กน้อย" onclick="toggleCeilingDamageFields()"> ไม่มีความเสียหาย/เสียหายเล็กน้อย</label>
+<label><input type="radio" name="entry.1699926586" value="เสียหายมาก อาจร่วงหล่นได้" onclick="toggleCeilingDamageFields()"> เสียหายมาก อาจร่วงหล่นได้</label>
+<div id="ceiling_damage_area_1_group" style="display:none; margin-top: 10px;">
+  <label for="ceiling_damage_area_1">บริเวณที่ไม่มีความเสียหาย/เสียหายเล็กน้อย ฝ้า เพดาน</label>
+  <input type="text" id="ceiling_damage_area_1" name="entry.1603766743" required>
+</div>
+<div id="ceiling_damage_area_2_group" style="display:none; margin-top: 10px;">
+  <label for="ceiling_damage_area_2">บริเวณที่เสียหายมาก อาจร่วงหล่นได้ ฝ้า เพดาน</label>
+  <input type="text" id="ceiling_damage_area_2" name="entry.1071853918" required>
+</div>
+<script>
+function toggleCeilingDamageFields() {
+  const radios = document.getElementsByName('entry.1699926586');
+  const value = Array.from(radios).find(r => r.checked)?.value;
+  document.getElementById('ceiling_damage_area_1_group').style.display = 'none';
+  document.getElementById('ceiling_damage_area_2_group').style.display = 'none';
+  if (value === 'ไม่มีความเสียหาย/เสียหายเล็กน้อย') {
+    document.getElementById('ceiling_damage_area_1_group').style.display = 'block';
+  } else if (value === 'เสียหายมาก อาจร่วงหล่นได้') {
+    document.getElementById('ceiling_damage_area_2_group').style.display = 'block';
+  }
+}
+</script>
+
+
+<!-- วัสดุมุงหลังคา -->
+<strong>วัสดุมุงหลังคา</strong>
+<label><input type="radio" name="entry.398213675" value="ไม่มีความเสียหาย/เสียหายเล็กน้อย" onclick="toggleRoofMaterialDamageFields()"> ไม่มีความเสียหาย/เสียหายเล็กน้อย</label>
+<label><input type="radio" name="entry.398213675" value="เสียหายมาก อาจร่วงหล่นได้" onclick="toggleRoofMaterialDamageFields()"> เสียหายมาก อาจร่วงหล่นได้</label>
+<div id="roof_material_damage_area_1_group" style="display:none; margin-top: 10px;">
+  <label for="roof_material_damage_area_1">บริเวณที่ไม่มีความเสียหาย/เสียหายเล็กน้อย วัสดุมุงหลังคา</label>
+  <input type="text" id="roof_material_damage_area_1" name="entry.972413328" required>
+</div>
+<div id="roof_material_damage_area_2_group" style="display:none; margin-top: 10px;">
+  <label for="roof_material_damage_area_2">บริเวณที่เสียหายมาก อาจร่วงหล่นได้ วัสดุมุงหลังคา</label>
+  <input type="text" id="roof_material_damage_area_2" name="entry.175835467" required>
+</div>
+<script>
+function toggleRoofMaterialDamageFields() {
+  const radios = document.getElementsByName('entry.398213675');
+  const value = Array.from(radios).find(r => r.checked)?.value;
+  document.getElementById('roof_material_damage_area_1_group').style.display = 'none';
+  document.getElementById('roof_material_damage_area_2_group').style.display = 'none';
+  if (value === 'ไม่มีความเสียหาย/เสียหายเล็กน้อย') {
+    document.getElementById('roof_material_damage_area_1_group').style.display = 'block';
+  } else if (value === 'เสียหายมาก อาจร่วงหล่นได้') {
+    document.getElementById('roof_material_damage_area_2_group').style.display = 'block';
+  }
+}
+</script>
+
+
+<!-- ส่วนที่ 7 ความเสียหายของระบบไฟฟ้าและระบบอื่นๆ --> 
+<h3>ส่วนที่ 7 ความเสียหายของระบบไฟฟ้าและระบบอื่นๆ</h3>
+<label for="electric_system_damage">ความเสียหายของระบบไฟฟ้าและระบบอื่นๆ(ข้อสังเกต)</label>
+<input type="text" id="electric_system_damage" name="entry.604310751" required>
+
+<!-- ส่วนที่ 8 สรุปผลการประเมินความเสียหายที่มีผลต่อการใช้งานอาคาร --> 
+<h3>ส่วนที่ 8 สรุปผลการประเมินความเสียหายที่มีผลต่อการใช้งานอาคาร</h3>
+<strong>สรุปผลการประเมินความเสียหายที่มีผลต่อการใช้งานอาคาร</strong>
+<div style="text-align: left;">
+  <img src="โครงสร้างอาคารมีความเสียหายเล็กน้อยหรือไม่มีความเสียหาย สามารถใช้งานได้ปกติ.png" 
+       alt="รูปตัวอย่างที่ 8.1" 
+       width="150" 
+       style="border-radius: 1px;">
+</div>
+<label><input type="radio" name="entry.491958165" value="โครงสร้างอาคารมีความเสียหายเล็กน้อยหรือไม่มีความเสียหาย สามารถใช้งานได้ปกติ" required> โครงสร้างอาคารมีความเสียหายเล็กน้อยหรือไม่มีความเสียหาย สามารถใช้งานได้ปกติ</label>
+<div style="text-align: left;">
+  <img src="โครงสร้างอาคารมีความเสียหายปานกลาง สามารถใช้งานได้แต่ต้องระมัดระวังภัยจากเศษวัสดุร่วงหล่นจากชิ้นส่วนโครงสร้างและส่วนประกอบต่างๆ ของอาคาร.png" 
+       alt="รูปตัวอย่างที่ 8.2" 
+       width="150" 
+       style="border-radius: 1px;">
+</div>
+<label><input type="radio" name="entry.491958165" value="โครงสร้างอาคารมีความเสียหายปานกลาง สามารถใช้งานได้แต่ต้องระมัดระวังภัยจากเศษวัสดุร่วงหล่นจากชิ้นส่วนโครงสร้างและส่วนประกอบต่างๆ ของอาคาร" required> โครงสร้างอาคารมีความเสียหายปานกลาง สามารถใช้งานได้แต่ต้องระมัดระวังภัยจากเศษวัสดุร่วงหล่นจากชิ้นส่วนโครงสร้างและส่วนประกอบต่างๆ ของอาคาร</label>
+<div style="text-align: left;">
+  <img src="โครงสร้างอาคารมีความเสียหายอย่างหนักและอาจเกิดการพังถล่มได้ หรืออาคารมีสภาพที่เป็นอันตรายถึงชีวิตได้ จึงไม่สามารถให้ใช้งานอาคารต่อไปได้.png" 
+       alt="รูปตัวอย่างที่ 8.3" 
+       width="150" 
+       style="border-radius: 1px;">
+</div>
+<label><input type="radio" name="entry.491958165" value="โครงสร้างอาคารมีความเสียหายอย่างหนักและอาจเกิดการพังถล่มได้ หรืออาคารมีสภาพที่เป็นอันตรายถึงชีวิตได้ จึงไม่สามารถให้ใช้งานอาคารต่อไปได้" required> โครงสร้างอาคารมีความเสียหายอย่างหนักและอาจเกิดการพังถล่มได้ หรืออาคารมีสภาพที่เป็นอันตรายถึงชีวิตได้ จึงไม่สามารถให้ใช้งานอาคารต่อไปได้</label>
+
+
+<strong>ข้อแนะนำเพิ่มเติม</strong>
+<label><input type="radio" name="entry.1052395595" value="จัดให้มีการตรวจสอบอย่างละเอียด" onclick="toggleOtherAdviceFields()" required> จัดให้มีการตรวจสอบอย่างละเอียด</label>
+<label><input type="radio" name="entry.1052395595" value="จัดให้มีกั้นโดยรอบอาคาร หรือ พื้นที่บางส่วนของอาคาร" onclick="toggleOtherAdviceFields()" required> จัดให้มีกั้นโดยรอบอาคาร หรือ พื้นที่บางส่วนของอาคาร</label>
+<label><input type="radio" name="entry.1052395595" value="อื่นๆ" onclick="toggleOtherAdviceFields()" required> อื่นๆ</label>
+<div id="other_advice_group" style="display:none; margin-top: 10px;">
+  <label for="other_advice">ข้อแนะนำเพิ่มเติมอื่นๆ</label>
+  <input type="text" id="other_advice" name="entry.707128480" required>
+</div>
+<script>
+function toggleOtherAdviceFields() {
+  const radios = document.getElementsByName('entry.1052395595');
+  const value = Array.from(radios).find(r => r.checked)?.value;
+  if (value === 'อื่นๆ') {
+    document.getElementById('other_advice_group').style.display = 'block';
+  } else {
+    document.getElementById('other_advice_group').style.display = 'none';
+  }
+}
+</script>
+
+<label for="survey_completion_time">เวลาสำรวจแล้วเสร็จ</label>
+<input type="time" id="survey_completion_time" name="entry.1656273013" required>
+
+<!-- ส่วนที่ 9 ข้อมูลผู้สำรวจ -->
+<h3>ส่วนที่ 9 ข้อมูลผู้สำรวจ</h3>
+<label for="investigator_name_1">ชื่อผู้สำรวจ #1</label>
+<input type="text" id="investigator_name_1" name="entry.502935266" required>
+<label for="investigator_organization_1">หน่วยงาน #1</label>
+<input type="text" id="investigator_organization_1" name="entry.1894281363" required>
+<label for="investigator_position_1">ตำแหน่ง #1</label>
+<input type="text" id="investigator_position_1" name="entry.1640452838" required>
+<label for="investigator_phone_1">โทรศัพท์ #1</label>
+<input type="text" id="investigator_phone_1" name="entry.591994490" required>
+<label for="investigator_name_2">ชื่อผู้สำรวจ #2</label>
+<input type="text" id="investigator_name_2" name="entry.154946641" required>
+<label for="investigator_organization_2">หน่วยงาน #2</label>
+<input type="text" id="investigator_organization_2" name="entry.1935986370" required>
+<label for="investigator_position_2">ตำแหน่ง #2</label>
+<input type="text" id="investigator_position_2" name="entry.1061574151" required>
+<label for="investigator_phone_2">โทรศัพท์ #2</label>
+<input type="text" id="investigator_phone_2" name="entry.1434521001" required>
+<label for="investigator_name_3">ชื่อผู้สำรวจ #3</label>
+<input type="text" id="investigator_name_3" name="entry.96368045" required>
+<label for="investigator_organization_3">หน่วยงาน #3</label>
+<input type="text" id="investigator_organization_3" name="entry.1494000354" required>
+<label for="investigator_position_3">ตำแหน่ง #3</label>
+<input type="text" id="investigator_position_3" name="entry.2082918030" required>
+<label for="investigator_phone_3">โทรศัพท์ #3</label>
+<input type="text" id="investigator_phone_3" name="entry.1924784574" required>
+<label for="survey_leader_name">หัวหน้าผู้สำรวจ</label>
+<input type="text" id="survey_leader_name" name="entry.1077187790" required>
+<label for="survey_leader_organization">หน่วยงาน</label>
+<input type="text" id="survey_leader_organization" name="entry.878319725" required>
+<label for="survey_leader_position">ตำแหน่ง</label>
+<input type="text" id="survey_leader_position" name="entry.2048807462" required>
+<label for="survey_leader_phone">โทรศัพท์</label>
+<input type="text" id="survey_leader_phone" name="entry.422090311" required>
+
+<!-- ส่วนที่ 10 ภาพประกอบที่จำเป็น -->
+<h3>ส่วนที่ 10 ภาพประกอบที่จำเป็น</h3>
+<form id="uploadForm">
+  <label>รูปภาพที่ 1</label>
+  <input type="file" id="image_1" required><br>
+  <label>รูปภาพที่ 2</label>
+  <input type="file" id="image_2" required><br>
+  <label>รูปภาพที่ 3</label>
+  <input type="file" id="image_3" required><br>
+  <label>รูปภาพที่ 4</label>
+  <input type="file" id="image_4" required><br>
+  <label>รูปภาพที่ 5</label>
+  <input type="file" id="image_5" required><br>
+  <label>รูปภาพที่ 6</label>
+  <input type="file" id="image_6" required><br><br>
+  
+  <button type="submit">อัปโหลดและส่งฟอร์ม</button>
+</form>
+
+<script>
+const formUrl = "https://drive.google.com/drive/folders/1-79dumhmkTTssR4-7Xb1ZFBZ-tTuD1Zj";
+const webAppUrl = "https://script.google.com/macros/s/AKfycbw_YMPGbgIKPVPapIEkCp2hQ3gmgK1c0_XQESkSFUlb3Y31wmaZPWMKf5z3VrdrHcDbdQ/exec";
+
+// Map ช่อง entry ของแต่ละภาพ
+const entryMap = {
+  image_1: "entry.1414879840",
+  image_2: "entry.1467943237",
+  image_3: "entry.1167757169",
+  image_4: "entry.623998774",
+  image_5: "entry.2126765965",
+  image_6: "entry.1719929121"
+};
+
+document.getElementById("uploadForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const imageLinks = {};
+
+  // อัปโหลดภาพทั้งหมด
+  for (let key in entryMap) {
+    const fileInput = document.getElementById(key);
+    const file = fileInput.files[0];
+    if (!file) {
+      alert(`กรุณาเลือกรูป ${key}`);
+      return;
+    }
+
+    const reader = new FileReader();
+    await new Promise((resolve) => {
+      reader.onload = async function () {
+        const base64 = reader.result.split(",")[1];
+        const uploadData = new URLSearchParams();
+        uploadData.append("image", base64);
+        uploadData.append("name", file.name);
+
+        const res = await fetch(webAppUrl, {
+          method: "POST",
+          body: uploadData,
+        });
+        const imageUrl = await res.text();
+        imageLinks[key] = imageUrl;
+        resolve();
+      };
+      reader.readAsDataURL(file);
+    });
+  }
+
+  // ส่งลิงก์ทั้งหมดเข้า Google Form
+  const formData = new URLSearchParams();
+  for (let key in entryMap) {
+    formData.append(entryMap[key], imageLinks[key]);
+  }
+
+  await fetch(formUrl, {
+    method: "POST",
+    body: formData,
+  });
+
+  alert("ส่งฟอร์มพร้อมลิงก์รูปเรียบร้อยแล้ว!");
+});
+</script>
+
+
+<!-- เพิ่มปุ่ม Submit -->
+<button type="submit">ส่งข้อมูล</button>
+</form>
+    </div>
+</body>
+</html>
